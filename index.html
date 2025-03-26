@@ -1,22 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="script.js">
+  <link rel="stylesheet" href="style.css">
   <title>Formulario Registro - Matías Wilder</title>
 </head>
 <body>
-  
-  <section class="form-register">
+
+  <section class="form">
     <h4>Formulario Registro - Wilder</h4>
-    <input class="controls" id="nom" placeholder="Ingrese su Nombre">
-    <input class="controls" id="cor" placeholder="Ingrese su Correo">
-    <input class="controls" id="con" placeholder="Ingrese su Contraseña">
-    <input class="controls" id="ccon" placeholder="Confirme su Contraseña">
-    <input class="botons" id="reg" type="submit" value="Registrar">
+
+    <div class="ingreso">
+      <label for="nom">Nombre Completo</label>
+      <input class="input" type="text" id="nom" placeholder="Ingrese su Nombre">
+      <p class="mensajeE"></p>
+    </div>
+
+    <div class="ingreso">
+      <label for="cor">Correo Electrónico</label>
+      <input class="input" type="email" id="cor" placeholder="Ingrese su Correo">
+      <p class="mensajeE"></p>
+    </div>
+
+    <div class="ingreso">
+      <label for="con">Contraseña</label>
+      <input class="input" type="password" id="con" placeholder="Ingrese su Contraseña">
+      <p class="mensajeE"></p>
+    </div>
+
+    <div class="ingreso">
+      <label for="ccon">Confirmar Contraseña</label>
+      <input class="input" type="password" id="ccon" placeholder="Confirme su Contraseña">
+      <p class="mensajeE"></p>
+    </div>
+
+    <input class="boton" id="reg" type="submit" value="Registrar" disabled>
   </section>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
